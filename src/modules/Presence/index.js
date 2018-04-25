@@ -125,7 +125,7 @@ export default class Presence extends RcModule {
   }
 
   initialize() {
-    this.store.subscribe(this._onStateChange);
+    this.store.subscribe(()=>this._onStateChange());
   }
 
   _shouldInit() {
